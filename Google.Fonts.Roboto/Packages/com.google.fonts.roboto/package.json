@@ -1,0 +1,16 @@
+{
+  "name": "com.google.fonts.roboto",
+  "displayName": "Google.Fonts.Roboto",
+  "description": "Google.Fonts.Roboto description goes here.",
+  "keywords": [],
+  "version": "1.0.0-preview.1",
+  "unity": "2019.4",
+  "license": "MIT",
+  "repository": {
+    "type": "git"
+  },
+  "author": "Stephen Hodgson",
+  "dependencies": {
+    "com.unity.textmeshpro": "2.1.6"
+  }
+}
