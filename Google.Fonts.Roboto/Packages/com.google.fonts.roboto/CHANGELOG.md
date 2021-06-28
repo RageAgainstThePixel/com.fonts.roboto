@@ -26,6 +26,6 @@ straightforward as possible.
 
  end template -->
 
-## 1.0.0-preview.1
+## 1.0.0
 
 Initial Release!

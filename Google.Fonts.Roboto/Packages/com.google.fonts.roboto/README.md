@@ -2,7 +2,7 @@
 
 [![openupm](https://img.shields.io/npm/v/com.google.fonts.roboto?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.google.fonts.roboto/)
 
-A Google.Fonts.Roboto package for the [Unity](https://unity.com/) Game Engine.
+A [Google.Fonts.Roboto](https://fonts.google.com/specimen/Roboto) upm package for the [Unity](https://unity.com/) Game Engine.
 
 ## Installing
 
@@ -15,7 +15,7 @@ A Google.Fonts.Roboto package for the [Unity](https://unity.com/) Game Engine.
   - `Name: OpenUPM`
   - `URL: https://package.openupm.com`
   - `Scope(s):`
-    - `com.google.fonts.roboto`
+    - `com.google.fonts`
 - Open the Unity Package Manager window
 - Change the Registry from Unity to `My Registries`
 - Add the `Google.Fonts.Roboto` package
@@ -23,12 +23,4 @@ A Google.Fonts.Roboto package for the [Unity](https://unity.com/) Game Engine.
 ### Via Unity Package Manager and Git url
 
 - Open your Unity Package Manager
-- Add package from git url: `https://github.com/Stephen Hodgson/com.google.fonts.roboto.git#upm`
-
-## Getting Started
-
-### Project Setup
-
-```csharp
-// TODO
-```
+- Add package from git url: `https://github.com/RageAgainstThePixel/com.google.fonts.roboto.git#upm`

@@ -28,7 +28,11 @@ namespace Google.Fonts
             var projectRootPath = Directory.GetParent(Directory.GetParent(Application.dataPath).FullName);
             var submoduleFontPath = $"{projectRootPath}\\{FontPath}";
 
-            Debug.Assert(Directory.Exists(submoduleFontPath), $"Missing submodule path {submoduleFontPath}\nDid you forget to recursively checkout the repository?");
+            if (!Directory.Exists(submoduleFontPath))
+            {
+                // Must be in a published package.
+                return;
+            }
 
             var packagePath = Directory.GetParent(Application.dataPath);
             var packageFontPath = $"{packagePath}\\{PackagePath}\\Runtime\\Fonts";
