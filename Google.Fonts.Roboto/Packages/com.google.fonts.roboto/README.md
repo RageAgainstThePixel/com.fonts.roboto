@@ -4,6 +4,8 @@
 
 A [Google.Fonts.Roboto](https://fonts.google.com/specimen/Roboto) upm package for the [Unity](https://unity.com/) Game Engine.
 
+***All copyrights, trademarks, logos, and assets are the property of their respective owners.***
+
 ## Installing
 
 ### Via Unity Package Manager and OpenUPM
