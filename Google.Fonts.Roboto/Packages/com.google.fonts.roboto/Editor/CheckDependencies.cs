@@ -9,6 +9,9 @@ namespace Google.Fonts
 {
     internal static class CheckDependencies
     {
+        private static readonly string FontPath = "submodules\\google.fonts\\apache\\roboto\\static";
+        private static readonly string PackagePath = "Packages\\com.google.fonts.roboto";
+
         [InitializeOnLoadMethod]
         public static void Check()
         {
@@ -19,6 +22,33 @@ namespace Google.Fonts
                     "OK", "Later"))
                 {
                     ImportTMProEssentialResources();
+                }
+            }
+
+            var projectRootPath = Directory.GetParent(Directory.GetParent(Application.dataPath).FullName);
+            var submoduleFontPath = $"{projectRootPath}\\{FontPath}";
+
+            Debug.Assert(Directory.Exists(submoduleFontPath), $"Missing submodule path {submoduleFontPath}\nDid you forget to recursively checkout the repository?");
+
+            var packagePath = Directory.GetParent(Application.dataPath);
+            var packageFontPath = $"{packagePath}\\{PackagePath}\\Runtime\\Fonts";
+
+            if (!Directory.Exists(packageFontPath))
+            {
+                Directory.CreateDirectory(packageFontPath);
+
+                var fonts = Directory.GetFiles(submoduleFontPath);
+
+                foreach (var font in fonts)
+                {
+                    var newPath = font.Replace(submoduleFontPath, packageFontPath);
+
+                    if (File.Exists(newPath))
+                    {
+                        File.Delete(newPath);
+                    }
+
+                    File.Copy(font, newPath);
                 }
             }
         }
