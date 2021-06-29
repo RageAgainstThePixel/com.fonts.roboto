@@ -124,7 +124,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0
+  bundleVersion: 1.0.3
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -168,9 +168,9 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Google.Fonts.Roboto
-    Lumin: com.Google.Fonts.Roboto
-    Standalone: com.Google.Fonts.Roboto
+    Android: com.fonts.Roboto
+    Lumin: com.fonts.Roboto
+    Standalone: com.fonts.Roboto
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 19
@@ -565,14 +565,14 @@ PlayerSettings:
     Windows Store Apps: 6
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: com.Google.Fonts.Roboto
+  metroPackageName: com.fonts.Roboto
   metroPackageVersion: 0.1.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: com.Google.Fonts.Roboto
+  metroApplicationDescription: com.fonts.Roboto
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
