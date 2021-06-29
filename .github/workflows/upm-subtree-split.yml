@@ -13,5 +13,5 @@ jobs:
         fetch-depth: 0
     - name: upm subtree split
       run: |
-        git subtree split --prefix="Google.Fonts.Roboto/Packages/com.google.fonts.roboto" -b upm
+        git subtree split --prefix="Fonts.Roboto/Packages/com.fonts.roboto" -b upm
         git push -u origin upm --force

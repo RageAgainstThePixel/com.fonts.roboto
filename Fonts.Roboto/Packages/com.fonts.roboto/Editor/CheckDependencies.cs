@@ -5,12 +5,12 @@ using TMPro.EditorUtilities;
 using UnityEditor;
 using UnityEngine;
 
-namespace Google.Fonts
+namespace Fonts
 {
     internal static class CheckDependencies
     {
         private static readonly string FontPath = "submodules\\google.fonts\\apache\\roboto\\static";
-        private static readonly string PackagePath = "Packages\\com.google.fonts.roboto";
+        private static readonly string PackagePath = "Packages\\com.fonts.roboto";
 
         [InitializeOnLoadMethod]
         public static void Check()
@@ -54,6 +54,8 @@ namespace Google.Fonts
 
                     File.Copy(font, newPath);
                 }
+
+                AssetDatabase.Refresh(ImportAssetOptions.Default);
             }
         }
 
