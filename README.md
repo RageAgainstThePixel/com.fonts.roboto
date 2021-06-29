@@ -12,7 +12,7 @@ A [Roboto font](https://fonts.google.com/specimen/Roboto) upm package for the [U
 
 - Open your Unity project settings
 - Select the `Package Manager`
-![scoped-registries](Google.Fonts.Roboto/Packages/com.fonts.roboto/Documentation~/images/package-manager-scopes.png)
+![scoped-registries](Fonts.Roboto/Packages/com.fonts.roboto/Documentation~/images/package-manager-scopes.png)
 - Add the OpenUPM package registry:
   - `Name: OpenUPM`
   - `URL: https://package.openupm.com`
